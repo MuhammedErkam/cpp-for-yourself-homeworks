@@ -33,6 +33,7 @@ int main(int argc, char const *argv[]) {
   message = name + ", the " + adjectives[name.size() % adjectives.size()] +
             +" " + noun_map.at(born) + " that " +
             ending[name.size() % ending.size()];
+  std::cout << "\nHere is your description:" << std::endl;
   std::cout << message << std::endl;
   return 0;
 }
