@@ -11,7 +11,7 @@ int main() {
     std::cout << "Your trim string:";
 
     result_str = no_strings_attached::trim::Trim(
-        trimString, 'h', no_strings_attached::trim::Side::kLeft);
+        trimString, ' ', no_strings_attached::trim::Side::kBoth);
 
     std::cout << "'" << result_str << "'" << std::endl;
 
