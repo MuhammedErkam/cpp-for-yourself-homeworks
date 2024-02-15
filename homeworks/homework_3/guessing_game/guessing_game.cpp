@@ -10,14 +10,14 @@ int main(int argc, char const *argv[]) {
   int largest{0};
   int random_variable{0};
   int guess{0};
-  int counter{0};
+  int counter{1};
 
   std::cout << "Welcome to the GUESSING GAME!\n"
             << "I will generate a number and you will guess it!" << std::endl;
 
-  std::cout << "Please provide the smallest number: ";
+  std::cout << "Please provide the smallest number: " << std::endl;;
   std::cin >> smallest;
-  std::cout << "Please provide the largest number: ";
+  std::cout << "Please provide the largest number: " << std::endl;;
   std::cin >> largest;
   std::uniform_int_distribution distrubution{smallest, largest};
 
@@ -25,7 +25,7 @@ int main(int argc, char const *argv[]) {
   std::cout << "I've generated a number. Try to guess it!" << std::endl;
 
   while (true) {
-    std::cout << "Please provide the next guess: ";
+    std::cout << "Please provide the next guess: " << std::endl;;
     std::cin >> guess;
     if (guess < random_variable) {
       std::cout << "Your number is too small. Try again!" << std::endl;
