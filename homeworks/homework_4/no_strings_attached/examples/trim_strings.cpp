@@ -8,7 +8,7 @@ int main() {
     std::cout << "Example program that trims strings." << std::endl;
     std::cout << "Please enter a string:" << std::endl;
     std::getline(std::cin, trimString);
-    std::cout << "Your trimmed string:";
+    std::cout << "Your trimmed string: ";
 
     result_str = no_strings_attached::trim::Trim(
         trimString, ' ', no_strings_attached::trim::Side::kBoth);
