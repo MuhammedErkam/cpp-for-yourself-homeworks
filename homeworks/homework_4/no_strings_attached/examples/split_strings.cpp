@@ -5,9 +5,9 @@
 int main() {
     std::string splitString;
     std::vector<std::string> result_vec{};
-    
+
     std::cout << "Example program that splits strings." << std::endl;
-    std::cout << "Please enter a string: " << std::endl;
+    std::cout << "Please enter a string:" << std::endl;
     std::getline(std::cin, splitString);
     std::cout << "Your split string: ";
 
