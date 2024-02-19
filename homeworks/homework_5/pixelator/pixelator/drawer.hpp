@@ -1,6 +1,6 @@
 #pragma once
 
-#include <../../ftxui/include/ftxui/screen/screen.hpp>
+#include "ftxui/screen/screen.hpp"
 #include "pixelator/image.hpp"
 #include <iostream>
 namespace pixelator {
