@@ -1,7 +1,7 @@
 #pragma once
 
-#include "pixelator/stb_image_data_view.hpp"
-#include "pixelator/image.hpp"
+#include "../pixelator/stb_image_data_view.hpp"
+#include "../pixelator/image.hpp"
 
 namespace pixelator {
 // Function to scale coordinates

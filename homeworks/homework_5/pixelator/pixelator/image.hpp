@@ -1,7 +1,8 @@
 #pragma once
 
-#include <external/ftxui/include/ftxui/screen/color.hpp>
-#include "pixelator/size.hpp"
+#include <../external/ftxui/include/ftxui/screen/color.hpp>
+#include "../pixelator/size.hpp"
+
 #include <cstdint>  // for uint8_t
 #include <vector>
 
