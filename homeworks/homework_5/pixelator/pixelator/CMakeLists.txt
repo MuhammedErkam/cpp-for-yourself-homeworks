@@ -27,17 +27,17 @@ if (BUILD_TESTING)
     add_executable(stb_image_data_view_test stb_image_data_view_test.cpp)
     target_link_libraries(stb_image_data_view_test PRIVATE stb_image_data_view stb::stb ftxui::screen GTest::gtest_main)
 
-    #add_executable(pixelate_image_test pixelate_image_test.cpp)
-    #target_link_libraries(pixelate_image_test PRIVATE pixelate_image stb::stb ftxui::screen GTest::gtest_main)
+    add_executable(pixelate_image_test pixelate_image_test.cpp)
+    target_link_libraries(pixelate_image_test PRIVATE pixelate_image stb::stb ftxui::screen GTest::gtest_main)
 
-    #add_executable(drawer_test drawer_test.cpp)
-    #target_link_libraries(drawer_test PRIVATE drawer GTest::gtest_main)
+    add_executable(drawer_test drawer_test.cpp)
+    target_link_libraries(drawer_test PRIVATE drawer GTest::gtest_main)
     
     include(GoogleTest) 
 
     gtest_discover_tests(image_test) 
     gtest_discover_tests(stb_image_data_view_test) 
-    #gtest_discover_tests(pixelate_image_test) 
-    #gtest_discover_tests(drawer_test) 
+    gtest_discover_tests(pixelate_image_test) 
+    gtest_discover_tests(drawer_test) 
 
 endif()
