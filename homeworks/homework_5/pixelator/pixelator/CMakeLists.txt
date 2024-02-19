@@ -31,7 +31,7 @@ if (BUILD_TESTING)
     target_link_libraries(pixelate_image_test PRIVATE pixelate_image stb::stb ftxui::screen GTest::gtest_main)
 
     add_executable(drawer_test drawer_test.cpp)
-    target_link_libraries(drawer_test PRIVATE drawer GTest::gtest_main)
+    target_link_libraries(drawer_test PRIVATE drawer stb::stb ftxui::screen GTest::gtest_main)
     
     include(GoogleTest) 
 
