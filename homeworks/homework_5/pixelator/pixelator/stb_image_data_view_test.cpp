@@ -5,7 +5,7 @@
 #include <string>
 #include <vector>
 
-const std::filesystem::path image_path{"/home/erkam/Desktop/CppTuts/CodeForYourself/homeworks/homework5/pixelator/pixelator/test_data/test.png"};
+const std::filesystem::path image_path{"pixelator/test_data/test.png"};
 
 TEST(StbImage_test, test1) {
     pixelator::StbImageDataView empty_image{};
