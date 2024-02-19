@@ -7,7 +7,7 @@
 #include <filesystem>
 
 //const std::filesystem::path image_path{"/home/erkam/Desktop/CppTuts/CodeForYourself/homeworks/homework5/pixelator/pixelator/test_data/test.png"};
-const std::filesystem::path image_path{"pixelator/test_data/grumpy_little.png"};
+const std::filesystem::path image_path{"/home/erkam/Desktop/Projects/CppCourse/cpp-for-yourself-homeworks/homeworks/homework_5/pixelator/pixelator/test_data/grumpy_little.png"};
 
 TEST(PixelateImage, test1) {
     pixelator::Size s{98, 150};
@@ -15,8 +15,8 @@ TEST(PixelateImage, test1) {
     const auto pixelated_image = pixelator::PixelateImage(image, s);
 
     bool empty = false;
-    int row = 50;
-    int col = 50;
+    int row = 98;
+    int col = 98;
     EXPECT_EQ(empty, pixelated_image.empty());
     EXPECT_EQ(row, pixelated_image.rows());
     EXPECT_EQ(col, pixelated_image.cols());
