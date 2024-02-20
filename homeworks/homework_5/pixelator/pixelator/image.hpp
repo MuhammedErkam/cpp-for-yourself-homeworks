@@ -1,6 +1,6 @@
 #pragma once
 
-#include <../external/ftxui/include/ftxui/screen/color.hpp>
+#include <external/ftxui/include/ftxui/screen/color.hpp>
 #include "size.hpp"
 
 #include <cstdint>  // for uint8_t

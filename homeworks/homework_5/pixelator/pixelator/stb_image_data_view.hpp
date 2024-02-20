@@ -1,10 +1,10 @@
 #pragma once 
 #define STB_IMAGE_IMPLEMENTATION
-#include <../external/stb/stb_image.h>
+#include <external/stb/stb_image.h>
 
 #include "size.hpp"
 
-#include <../external/ftxui/include/ftxui/screen/color.hpp>
+#include <external/ftxui/include/ftxui/screen/color.hpp>
 #include <filesystem>
 #include <iostream>
 
