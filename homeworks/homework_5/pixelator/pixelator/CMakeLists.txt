@@ -22,16 +22,16 @@ target_link_libraries(drawer INTERFACE image cxx_setup)
 
 if (BUILD_TESTING) 
     add_executable(image_test image_test.cpp)
-    target_link_libraries(image_test PRIVATE image ftxui::screen GTest::gtest_main)
+    target_link_libraries(image_test PRIVATE cxx_setup image ftxui::screen GTest::gtest_main)
 
     add_executable(stb_image_data_view_test stb_image_data_view_test.cpp)
-    target_link_libraries(stb_image_data_view_test PRIVATE stb_image_data_view stb::stb ftxui::screen GTest::gtest_main)
+    target_link_libraries(stb_image_data_view_test PRIVATE cxx_setup stb_image_data_view stb::stb ftxui::screen GTest::gtest_main)
 
     add_executable(pixelate_image_test pixelate_image_test.cpp)
-    target_link_libraries(pixelate_image_test PRIVATE pixelate_image stb::stb ftxui::screen GTest::gtest_main)
+    target_link_libraries(pixelate_image_test PRIVATE cxx_setup pixelate_image stb::stb ftxui::screen GTest::gtest_main)
 
     add_executable(drawer_test drawer_test.cpp)
-    target_link_libraries(drawer_test PRIVATE drawer stb::stb ftxui::screen GTest::gtest_main)
+    target_link_libraries(drawer_test PRIVATE cxx_setup drawer stb::stb ftxui::screen GTest::gtest_main)
     
     include(GoogleTest) 
 
