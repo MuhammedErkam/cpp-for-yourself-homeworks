@@ -1,4 +1,4 @@
-#include "pixelator/pixelate_image.hpp"
+#include "pixelate_image.hpp"
 
 #include <gtest/gtest.h>
 

@@ -26,10 +26,9 @@ int main(int argc, char **argv) {
     std::cerr << "Image could not be loaded" << std::endl;
     exit(1);
   }
-  Drawer drawer{ftxui::Dimension::Fixed(3)};
+  Drawer drawer{ftxui::Dimension::Fixed(30)};
   drawer.Set(PixelateImage(image, drawer.size()));
   drawer.Draw();
-  std::string str = drawer.ToString();
-  std::cout << str << std::endl;
+
   return 0;
 }

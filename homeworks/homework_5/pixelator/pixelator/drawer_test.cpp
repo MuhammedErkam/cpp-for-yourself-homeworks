@@ -1,6 +1,6 @@
-#include "pixelator/drawer.hpp"
-#include "pixelator/stb_image_data_view.hpp"
-#include "pixelator/pixelate_image.hpp"
+#include "drawer.hpp"
+#include "stb_image_data_view.hpp"
+#include "pixelate_image.hpp"
 
 #include <gtest/gtest.h>
 
@@ -13,7 +13,7 @@ using pixelator::Drawer;
 using pixelator::PixelateImage;
 using pixelator::StbImageDataView;
 
-TEST(Drawe_Test, test1) {
+TEST(Drawer_Test, test1) {
     const StbImageDataView image{image_path};
     if (image.empty()) {
         std::cerr << "Image could not be loaded" << std::endl;

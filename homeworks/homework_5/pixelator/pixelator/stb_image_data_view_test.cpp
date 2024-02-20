@@ -1,4 +1,4 @@
-#include "pixelator/stb_image_data_view.hpp"
+#include "stb_image_data_view.hpp"
 
 #include <gtest/gtest.h>
 
