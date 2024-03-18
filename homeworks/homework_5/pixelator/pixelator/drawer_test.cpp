@@ -7,7 +7,7 @@
 #include <string>
 #include <vector>
 
-const std::filesystem::path image_path{"../../pixelator/test_data/test.png"};
+const std::filesystem::path image_path{"../pixelator/test_data/test.png"};
 
 using pixelator::Drawer;
 using pixelator::PixelateImage;

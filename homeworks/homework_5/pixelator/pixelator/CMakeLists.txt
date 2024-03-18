@@ -9,16 +9,16 @@ add_library(size_str INTERFACE)
 target_link_libraries(size_str INTERFACE cxx_setup)
 
 add_library(image INTERFACE)
-target_link_libraries(image INTERFACE size_str cxx_setup)
+target_link_libraries(image INTERFACE size_str cxx_setup ftxui::screen )
 
 add_library(stb_image_data_view INTERFACE)
-target_link_libraries(stb_image_data_view INTERFACE size_str cxx_setup)
+target_link_libraries(stb_image_data_view INTERFACE size_str cxx_setup stb::stb ftxui::screen )
 
 add_library(pixelate_image INTERFACE)
-target_link_libraries(pixelate_image INTERFACE size_str image stb_image_data_view cxx_setup)
+target_link_libraries(pixelate_image INTERFACE size_str image stb_image_data_view cxx_setup stb::stb ftxui::screen)
 
 add_library(drawer INTERFACE)
-target_link_libraries(drawer INTERFACE image cxx_setup)
+target_link_libraries(drawer INTERFACE image cxx_setup ftxui::screen)
 
 if (BUILD_TESTING) 
     add_executable(image_test image_test.cpp)
