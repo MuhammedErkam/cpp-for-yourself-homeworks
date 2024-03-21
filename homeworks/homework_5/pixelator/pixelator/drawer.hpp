@@ -16,7 +16,7 @@ public:
     // Constructor to create a drawer with full screen size
     Drawer(ftxui::Dimensions dimension) {
         rows_ = dimension.dimy;
-        cols_ = rows_ * 2;
+        cols_ = dimension.dimx;
         screen_ = ftxui::Screen::Create(dimension) ;
     }
 
