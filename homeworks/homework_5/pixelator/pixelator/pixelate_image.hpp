@@ -15,14 +15,14 @@ namespace pixelator
         float factor_rows = 0.0f;
         float smallest_factor = 0;
         
-        if(size.col >= image.cols() && size.row >= image.rows()){
+        if(size.cols >= image.cols() && size.rows >= image.rows()){
             factor_cols = image.cols();
             factor_rows = image.rows();
             smallest_factor = 1.0f;
         }
         else{
-            factor_cols = size.col / static_cast<float>(image.cols());
-            factor_rows = size.row / static_cast<float>(image.rows());            
+            factor_cols = size.cols / static_cast<float>(image.cols());
+            factor_rows = size.rows / static_cast<float>(image.rows());            
             smallest_factor = std::min(factor_cols, factor_rows);
         }
         

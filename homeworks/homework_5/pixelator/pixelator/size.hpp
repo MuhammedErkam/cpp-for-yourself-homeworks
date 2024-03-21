@@ -3,8 +3,8 @@
 namespace pixelator{
     
     struct Size {
-    int row;
-    int col;
+    int rows;
+    int cols;
     };
 
 } // namespace pixelator

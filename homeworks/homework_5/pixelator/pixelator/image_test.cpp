@@ -14,8 +14,8 @@ TEST(Image_test, test1) {
     EXPECT_EQ(empty, empty_image.empty());
     EXPECT_EQ(row, empty_image.rows());
     EXPECT_EQ(col, empty_image.cols());
-    EXPECT_EQ(s.row, empty_image.size().row);
-    EXPECT_EQ(s.col, empty_image.size().col);
+    EXPECT_EQ(s.rows, empty_image.size().rows);
+    EXPECT_EQ(s.cols, empty_image.size().cols);
 }
 
 TEST(Image_test, test2) {
@@ -29,8 +29,8 @@ TEST(Image_test, test2) {
     EXPECT_EQ(empty, image.empty());
     EXPECT_EQ(row, image.rows());
     EXPECT_EQ(col, image.cols());
-    EXPECT_EQ(s.row, image.size().row);
-    EXPECT_EQ(s.col, image.size().col);
+    EXPECT_EQ(s.rows, image.size().rows);
+    EXPECT_EQ(s.cols, image.size().cols);
 }
 
 TEST(Image_test, test3) {
@@ -43,6 +43,21 @@ TEST(Image_test, test3) {
     image.at(4,2) = yellowish;
 
     EXPECT_EQ(x, image.at(4,2) == yellowish);
+
+}
+
+TEST(Image_test, test4) {
+    pixelator::Size size{42,84};
+    pixelator::Image image{size};
+    pixelator::Image New_image{pixelator::Size{42,84}};
+    
+    bool empty = false;
+    const auto row{42};
+    const auto col{84};
+
+    EXPECT_EQ(empty, image.empty());
+    EXPECT_EQ(row, image.rows());
+    EXPECT_EQ(col, image.cols());
 
 }
 

@@ -18,7 +18,10 @@ namespace pixelator
 
         Image(const int row, const int col): cols_{col}, rows_{row}, pixels_(row*col) {
         }
-        
+
+        Image(const Size size): cols_{size.cols}, rows_{size.rows}, pixels_(size.rows*size.cols) {
+        }
+
         Image(const Image& ref_object) : cols_{ref_object.cols_}, rows_{ref_object.rows_}, pixels_{ref_object.pixels_} {}
         
         Image(Image&& move_object) : cols_{move_object.cols_}, rows_{move_object.rows_}, pixels_{move_object.pixels_} {
