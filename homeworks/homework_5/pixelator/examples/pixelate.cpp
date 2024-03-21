@@ -26,7 +26,7 @@ int main(int argc, char **argv) {
     exit(1);
   }
 
-  Drawer drawer{ftxui::Dimension::Fixed(70)};
+  Drawer drawer{ftxui::Dimension::Fixed(35)};
   drawer.Set(PixelateImage(image, drawer.size()));
   drawer.Draw();
   

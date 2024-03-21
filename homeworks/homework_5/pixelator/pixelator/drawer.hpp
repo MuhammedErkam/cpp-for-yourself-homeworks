@@ -8,23 +8,26 @@ namespace pixelator {
 class Drawer {
 private:
     ftxui::Screen screen_{0,0};
+    int rows_;
+    int cols_;
 
 public:
     Drawer() = default;
     // Constructor to create a drawer with full screen size
     Drawer(ftxui::Dimensions dimension) {
-        dimension.dimx = dimension.dimy * 2;
+        rows_ = dimension.dimy;
+        cols_ = rows_ * 2;
         screen_ = ftxui::Screen::Create(dimension) ;
     }
 
     // Get the number of rows
     int rows() const {
-        return screen_.dimy();
+        return rows_;
     }
 
     // Get the number of columns
     int cols() const {
-        return screen_.dimx();
+        return cols_;
     }
 
     // Get the size of the drawer
