@@ -14,7 +14,7 @@ using pixelator::PixelateImage;
 using pixelator::StbImageDataView;
 
 TEST(Drawer_Test, test1) {
-    const std::string str = "\x1B[39m\x1B[40m  \x1B[39m\x1B[49m    \r\n\x1B[39m\x1B[40m  \x1B[39m\x1B[49m    \r\n\x1B[39m\x1B[107m  \x1B[39m\x1B[49m    ";
+    const std::string str = "\x1B[39m\x1B[40m  \x1B[39m\x1B[49m \r\n\x1B[39m\x1B[40m  \x1B[39m\x1B[49m \r\n\x1B[39m\x1B[107m  \x1B[39m\x1B[49m ";
     const StbImageDataView image{image_path};
     if (image.empty()) {
         std::cerr << "Image could not be loaded" << std::endl;
